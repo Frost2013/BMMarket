@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>BM Market — Каталог</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="assets/logo.svg" alt="BM Market logo" class="logo">BM Market</a>
+      <nav class="main-nav">
+        <a href="catalog.html">Каталог</a>
+        <a href="about.html">О нас</a>
+        <a href="contact.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Каталог аукционных лотов</h1>
+
+    <div class="filters">
+      <input id="search" placeholder="Поиск по названию или описанию">
+      <select id="category">
+        <option value="all">Все категории</option>
+        <option value="electronics">Электроника</option>
+        <option value="home">Дом и кухня</option>
+        <option value="fashion">Одежда</option>
+      </select>
+      <select id="sort">
+        <option value="ending">Ближайшее окончание</option>
+        <option value="price_desc">Высокая ставка → низкая</option>
+      </select>
+      <button id="apply" class="btn">Применить</button>
+    </div>
+
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© BM Market — демо. Данные хранятся локально в браузере.</p>
+    </div>
+  </footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
